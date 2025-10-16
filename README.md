@@ -1,6 +1,6 @@
 # Reproducible Case
 This repository contains the MATLAB source code and a minimal working example for the paper "Coupled effects of
-fracture spatial distribution and rock matrix permeability on tunnel water inflow: An EDFM-based investigation". It implements an embedded discrete fracture model (EDFM)-based method for simulating steady-state groundwater inflow into a tunnel in fractured rock masses.
+fracture spatial distribution and rock matrix permeability on tunnel water inflow: An EDFM-based investigation". It implements an embedded discrete fracture model (EDFM)-based method for simulating steady-state groundwater inflow into a tunnel in fractured rock masses."
 
 ## 1 Case Configuration
 ### 1.1 Model Domain & Boundary Conditions
@@ -48,11 +48,20 @@ After successful execution, the code will generate:
 The compute tunnel inflow rate per unit length on our machine is 1.0214×10<sup>-4</sup> m<sup>3</sup>/s/m.
 
 ## 3 License
-This project is licensed under the [GPL-3.0 License]. 
+This code is provided solely for academic validation purposes.
+
+You may:
+- View and read the source code
+- Run the code locally to reproduce the results in our paper
+
+You may NOT:
+- Copy, modify, distribute, or use this code for any other purpose
+- Use this code in any commercial or non-commercial projects
+
+See the LICENSE.txt file for complete terms and conditions.
 
 ## 4 Contact
 For questions regarding this code implementation, please contact:
 - Name: Zhang Yu
 - Email: zhangyu_geoboy@163.com
 - GitHub Issues: [Please use the GitHub issue tracker]
-
