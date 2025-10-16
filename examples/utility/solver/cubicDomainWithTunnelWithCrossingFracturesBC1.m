@@ -33,15 +33,8 @@ function [states] = cubicDomainWithTunnelWithCrossingFracturesBC1(matrixG, matri
     bc = addBC(bc, matrixFractureGRightFaces, 'Pressure', (matrixFractureG.h+matrixFractureG.ME-matrixFractureG.faces.centroids(matrixFractureGRightFaces,2))*rhoW*norm(gravity));
     bc = addBC(bc, matrixFractureGBottomFaces, 'Pressure', (matrixFractureG.h+matrixFractureG.ME)*rhoW*norm(gravity));
     bc = addBC(bc, matrixGInnerFaces, 'Pressure', 0.0);
-    
-    disp(length(matrixFractureGUpperFaces) - length(matrixGUpperFaces));
-    disp(length(matrixFractureGBottomFaces) - length(matrixGBottomFaces));
-    disp(length(matrixFractureGLeftFaces) - length(matrixGLeftFaces));
-    disp(length(matrixFractureGRightFaces) - length(matrixGRightFaces));
-
 
     fracTunnelInterFaces = findFracTunnelInterFaces(matrixFractureG, fracNo, fracTunnelInterPoints);
-    % disp(fracTunnelInterFaces);
     
     bc = addBC(bc, fracTunnelInterFaces, 'Pressure', 0.0);
 
