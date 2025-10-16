@@ -41,7 +41,7 @@ function [states] = cubicDomainWithTunnelWithCrossingFracturesBC1(matrixG, matri
 
 
     fracTunnelInterFaces = findFracTunnelInterFaces(matrixFractureG, fracNo, fracTunnelInterPoints);
-    disp(fracTunnelInterFaces);
+    % disp(fracTunnelInterFaces);
     
     bc = addBC(bc, fracTunnelInterFaces, 'Pressure', 0.0);
 

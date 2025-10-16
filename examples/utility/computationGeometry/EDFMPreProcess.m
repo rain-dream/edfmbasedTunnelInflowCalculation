@@ -1,4 +1,4 @@
-function [processedG, processedFracPlanes] = EDFMPreProcess(G, fracPlanes, tol)
+ function [processedG, processedFracPlanes] = EDFMPreProcess(G, fracPlanes, tol)
     %% EDFM pre-processing
 
     %% Input
@@ -11,7 +11,7 @@ function [processedG, processedFracPlanes] = EDFMPreProcess(G, fracPlanes, tol)
     % processedFracPlanes: processed fracture data
 
     %% Load relevant modules
-    mrstModule add hfm ad-blackoil ad-core ad-props mrst-gui
+    mrstModule add hfm
 
     [processedG, processedFracPlanes] = EDFMgrid(G, fracPlanes,'Tolerance', tol);
     processedG = fracturematrixNNC3D(processedG, tol);

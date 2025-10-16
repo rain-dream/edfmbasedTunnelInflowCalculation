@@ -13,7 +13,7 @@ function [states] = steadySinglePhaseFlowSolver(G, fluidModel, initialState, bc,
     % states: solution
 
     %% Load relevant modules
-    mrstModule add hfm ad-blackoil ad-core ad-props mrst-gui
+    mrstModule add hfm 
 
     %% Set up fluid model
     if isWithFractures

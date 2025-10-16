@@ -29,16 +29,12 @@ function formatFigure(colorBarLim, colorBarTitle, xTicks, yTicks)
     ax.YLabel.FontSize = 28;
     set(gca, 'FontName', 'Times New Roman');
 
-    % axis tight;
-
     %% Format the color bar
     cb = colorbar('EastOutside');
     
     cb.Title.String = colorBarTitle;
-    % cb.Position(1) = cb.Position(1)+0.003;
     cb.FontSize = 24;
     cb.FontName = 'Times New Roman';
-    cb.Ticks = 0:2e5:8e5;
-    % colorbar('ylim', colorBarLim);
+    cb.Ticks = 0:2e5:12e5;
     colormap('jet');
 end

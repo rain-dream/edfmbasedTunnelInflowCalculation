@@ -1,4 +1,4 @@
-function plotPressureDistributionEDFM(G, states, colorBarLim, xTicks, yTicks, isWithFractures, tifFigureResolution, pressureDistributionMatLabFigureSavePath, pressureDistributionTifFigureSavePath)
+function plotPressureDistributionEDFM(G, states, colorBarLim, xTicks, yTicks, isWithFractures, figureResolution, figureSavePath)
     %% Plot the EDFM model's pressure distribution
     
     %% Input
@@ -8,9 +8,8 @@ function plotPressureDistributionEDFM(G, states, colorBarLim, xTicks, yTicks, is
     % xTicks: x-axis ticks
     % yTicks: y-axis ticks
     % isWithFractures: boolean indicating if the domain has fractures
-    % tifFigureResolution: resolution of the tif figure
-    % matLabFigureSavePath: path to save the figure in MATLAB format
-    % tifFigureSavePath: path to save the figure in tif format
+    % figureResolution: resolution of the figure
+    % figureSavePath: file path to save the figure
 
     figure('Position', [100, 100, 600, 500]);
 
@@ -29,5 +28,5 @@ function plotPressureDistributionEDFM(G, states, colorBarLim, xTicks, yTicks, is
     formatFigure(colorBarLim, 'Pa', xTicks, yTicks);
 
     %% Save the figure
-    saveTheFigure(tifFigureResolution, pressureDistributionMatLabFigureSavePath, pressureDistributionTifFigureSavePath);
+    saveTheFigure(figureResolution, figureSavePath);
 end

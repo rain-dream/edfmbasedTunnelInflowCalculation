@@ -1,13 +1,14 @@
-function saveTheFigure(tifFigureResolution, pressureDistributionMatLabFigureSavePath, pressureDistributionTifFigureSavePath)
+function saveTheFigure(figureResolution, figureSavePath)
     %% A convenient function to save the figure
 
     %% Input
-    % tifFigureResolution: resolution of the tif figure
-    % matLabFigureSavePath: path to save the figure in MATLAB format
-    % tifFigureSavePath: path to save the figure in tif format
+    % figureResolution: resolution of the figure
+    % figureSavePath: file path to save the figure
 
-    if ~isempty(pressureDistributionTifFigureSavePath)
+    if ~isempty(figureSavePath)
+        view(2);
+        axis on;
         f = gcf;
-        exportgraphics(f, pressureDistributionTifFigureSavePath, 'resolution', 600);
+        exportgraphics(f, figureSavePath, 'resolution', figureResolution);
     end
 end
