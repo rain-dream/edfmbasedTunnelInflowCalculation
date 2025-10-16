@@ -1,0 +1,32 @@
+ACADEMIC USE AND VALIDATION LICENSE
+
+Copyright (c) [2025] [Zhang Yu]. All rights reserved.
+
+The source code and related materials provided in this repository are supplementary to the academic paper entitled "Coupled effects of
+fracture spatial distribution and rock matrix permeability on tunnel water inflow: An EDFM-based investigation". 
+
+PERMITTED USE:
+You are granted permission to:
+
+View and read the source code.
+
+Execute the code on your local machine solely to verify, reproduce, and validate the results presented in the aforementioned paper.
+
+RESTRICTIONS:
+Any use beyond the Permitted Use is strictly prohibited without the prior written consent of the copyright holder. Prohibited actions include, 
+but are not limited to:
+
+Copying, modifying, adapting, translating, or creating derivative works.
+
+Distributing, publishing, sublicensing, or sharing the code or any derivative work in any form.
+
+Using the code (in whole or in part) for any commercial or non-commercial project, product, or service.
+
+Using the code for any purpose other than replicating the results of the specific paper referenced above.
+
+NO WARRANTY:
+This code is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. 
+In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the code or the use or other dealings in the code.
+
+CONTACT:
+For inquiries regarding licensing or use beyond the terms of this license, please contact the author at: zhangyu_geoboy@163.com.
